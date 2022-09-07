@@ -1,25 +1,5 @@
-import React, {useEffect, useState} from "react";
-import axios from "axios";
+import React from "react";
 
-function Posts() {
-    const [posts, setPosts] = useState([]);
-
-    useEffect(() => {
-        axios
-            .get("http://jsonplaceholder.typicode.com/posts")
-            .then((response) => setPosts(response.data));
-    }, []);
-
-    return (
-        <ul className="posts">
-            {posts.map((post) => (
-                <li className="post" key={post.id}>
-                    <h4>{post.title}</h4>
-                    <p>{post.body}</p>
-                </li>
-            ))}
-        </ul>
-    );
-}
+const Posts = () => <>HELLO WORLD! This will be site content. Don't worry about how bad this looks... I just wanted to get it deployed</>
 
 export default Posts;
