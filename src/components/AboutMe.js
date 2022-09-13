@@ -5,8 +5,7 @@ import {Container} from "@mui/material";
 const AboutMe = () =>
     <Container>
         <Box>
-            HELLO WORLD! This will be site content. Don't worry about how bad this looks...
-            I just wanted to get it deployed
+            About me me me me me
         </Box>
     </Container>
 
