@@ -28,7 +28,7 @@ const StyledToolbar = styled(Toolbar)(({theme}) => ({
 const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Contact'];
 
-export default function DrawerAppBar(props: Props) {
+export default function DrawerAppBar(props) {
     const {window} = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -38,7 +38,7 @@ export default function DrawerAppBar(props: Props) {
 
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{textAlign: 'center'}}>
-            <Typography variant="h6" sx={{my: 2}}>
+            <Typography variant="h6" sx={{my: 2 }}>
                 MO BLING
             </Typography>
             <Divider/>
@@ -50,6 +50,10 @@ export default function DrawerAppBar(props: Props) {
                         </ListItemButton>
                     </ListItem>
                 ))}
+                {/* todo: add socials */}
+                {/* <Divider /> */}
+                {/* <ListItem> */}
+                {/* </ListItem> */}
             </List>
         </Box>
     );

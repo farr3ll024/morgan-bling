@@ -1,11 +1,14 @@
 import React from 'react';
-import {ReactComponent as Logo} from "../logo.svg";
+import {Grid} from "@mui/material";
 
 const Header = () => {
     return (
         <header className="App-header">
-            <Logo style={{height: 200}}/>
-            <h1>Hi, I'm Morgan!</h1>
+            <Grid container>
+                <Grid item sx={{ color: 'black' }}>
+                    <h5>Morgan Smith</h5>
+                </Grid>
+            </Grid>
         </header>
     );
 }
