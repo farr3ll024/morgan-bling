@@ -1,5 +1,4 @@
 import "./App.css";
-import Header from "./components/Header";
 import React from 'react';
 import ContactForm from "./components/contactSection/ContactForm";
 import NavBar from "../src/components/Navbar";
